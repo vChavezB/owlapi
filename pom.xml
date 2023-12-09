@@ -33,7 +33,7 @@
 		<rdf4j.version>3.4.3</rdf4j.version>
 		<!-- remove this line for releases, if the release process fails because 
 			of missing javadoc jars -->
-		<no-javadoc>false</no-javadoc>
+		<no-javadoc>true</no-javadoc>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<!-- 5.0.0 is the earliest release on Maven Central for this series -->
 		<last.japicmp.compare.version>5.0.0</last.japicmp.compare.version>		
