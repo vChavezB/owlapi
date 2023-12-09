@@ -18,9 +18,8 @@ jobs:
         with:
           name: owlapi-iri-fix
           path: osgidistribution/target/owlapi-osgidistribution-5.1.18.jar
-
-    name: Publish package to GitHub Packages
-  publish-repo:
+          
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
