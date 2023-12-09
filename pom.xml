@@ -242,6 +242,13 @@
 							</instructions>
 						</configuration>
 					</plugin>
+					<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+                </configuration>
+            </plugin>
 					<!-- We need to configure the Source Plugin for deploying the sources. -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
