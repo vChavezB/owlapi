@@ -1,0 +1,20 @@
+name: OWL API Build
+on:
+  push:
+  pull_request:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Maven Central Repository
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - name: Build
+        run: mvn package
+      - uses: actions/upload-artifact@v3
+        with:
+          name: owlapi-iri-fix
+          path: osgidistribution/target/owlapi-osgidistribution-5.1.18.jar
