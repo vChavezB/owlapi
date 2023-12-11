@@ -13,7 +13,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Build
-        run: mvn package
+        run: mvn package && tree
       - uses: actions/upload-artifact@v3
         with:
           name: owlapi-iri-fix
