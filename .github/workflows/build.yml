@@ -17,7 +17,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: owlapi-iri-fix
-          path: distribution/target/owlapi-distribution-5.1.18.jar
+          path: api/target/owlapi-api-5.1.18.jar
           
   publish:
     runs-on: ubuntu-latest
