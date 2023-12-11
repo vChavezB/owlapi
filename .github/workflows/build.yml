@@ -10,8 +10,8 @@ jobs:
       - name: Set up Maven Central Repository
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
-          distribution: 'temurin'
+          java-version: '17'
+          distribution: 'zulu'
       - name: Build
         run: mvn package && tree
       - uses: actions/upload-artifact@v3
